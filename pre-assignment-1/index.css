@@ -1,0 +1,335 @@
+body, html {
+  margin: 0 0;
+  font-family:  MontSerrat;
+}
+
+nav {
+  width: 100%;
+  height: 115px;
+  top: 0;
+  bottom: 0;
+  z-index: 5;
+  position: absolute;
+  color: white;
+
+  background-color: rgba(0, 0, 0, 0.45);
+  
+}
+
+
+
+nav .padding{
+  padding: 40px 0;
+  padding-left: 66px;
+}
+
+nav .hidden {
+  padding-right: 66px;
+  font-size: 36px;
+}
+
+.menu {
+  font-weight: 700;
+  font-size: 25px;
+  justify-content: space-between;
+  display: none;
+}
+
+.menu > div:first-child{margin-left: auto;} 
+.menu > div{margin-right: 66px; max-height: 30px; }
+
+
+header {
+  width: 100%;
+  height: 100vh;
+
+  background-image: url('https://source.unsplash.com/daily?code');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.397);
+  background-blend-mode: darken;
+
+
+  text-align: center;
+
+  color: white;
+
+}
+
+header .padding {
+  padding: 145px 56px;
+}
+
+header h2 {
+  font-weight: 900;
+  font-size: 41px;
+  margin-bottom: 56px;
+  margin-top: 0px;
+}
+
+header p {
+  max-width: 984px;
+  
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 56px;
+}
+
+button {
+  border: 5px solid;
+  padding: 10px 5px;
+  font-family: MontSerrat;
+  font-size: 25px;
+  font-weight: 700;
+  background-color: transparent;
+  width: 267px;
+  height: 74px;
+}
+
+button:hover {
+  background: black;
+  color: white;
+}
+
+.button-box{
+  flex-direction: column;
+  margin: auto;
+  margin-top: 56px;
+  justify-content: center;
+  
+}
+
+
+.services {
+  width: 100%;
+  margin-top: 108px;
+}
+
+.services h3 {
+  font-weight: 900;
+  font-size: 60px;
+  text-align: center;
+
+  
+  margin-bottom: 88px;
+}
+
+.services .flex {
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+.services .service-card {
+  border: 3px solid black ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin: auto;
+  width: 306px;
+  height: 445px;
+
+  margin-bottom: 72px;
+  
+
+  
+}
+
+.service-card h4 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: 60px;
+  margin-bottom: 27px;
+}
+
+.service-card p {
+  font-weight: 400;
+  font-size: 18px;
+  margin: auto;
+  padding-left: 23px;
+  padding-right: 23px;
+ 
+}
+
+.service-card button {
+  margin-bottom: 60px;
+  margin: auto;
+}
+
+
+.b-white {
+  border-color: white;
+  color: white;
+  margin: auto;
+  margin-top: 52px;
+  
+}
+
+.b-white:hover {
+  background: white;
+  color: black;
+}
+
+
+footer {
+  width: 100%;
+  height: 195px;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+footer .footer-around {
+  flex-direction: column;
+
+  padding: 34px 95px ;
+  margin: auto;
+
+}
+
+.icons {
+  margin-top: 24px;
+}
+
+.icons > div:first-child{margin-left: auto;} 
+.icons > div{margin-right: 60px; }
+.icons > div:last-child{margin-right: auto;} 
+
+.icons > div:first-child{color: #C13584}
+.icons > div{color: #2867B2}
+.icons > div:last-child{color: #1DA1F2}
+
+
+footer i {
+  font-size: 30px;
+}
+
+.copyright {
+  margin: auto;
+  margin-top: 42px;
+
+}
+
+
+
+/* media queries */
+@media screen and (min-width: 640px) {
+
+  header .padding {
+    padding: 145px 40px;
+    padding-top: 200px;
+  }    
+}
+
+@media screen and (min-width: 768px) {
+  nav .hidden {
+    display: none;
+  }
+
+  nav .menu {
+    display: flex;
+  }
+
+  header .padding {
+    padding: 145px 56px;
+    padding-top: 267px;
+  }
+
+  header h2 {
+    font-size: 55px;
+  }
+
+  .button-box {
+    flex-direction: row;
+    margin-top: 0px;
+  }
+
+  .b-white {
+    margin: 0 30px;
+   
+  }
+
+  footer .footer-around {
+    flex-direction: row;
+    padding: 50px 96px ;
+    margin: auto;
+  }
+
+  .icons {
+    margin-top: 0;
+  }
+
+  footer {
+    height: 135px
+  }
+
+  .copyright {
+    margin: 0 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .padding {
+    padding: 250px 228px;
+  }
+  header h2 {
+    font-size: 60px;
+  } 
+  header p {
+    font-size: 20px;
+  }
+  .services {
+    width: 100%;
+    margin-top: 163px;
+  }
+  .services .flex {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 164px;
+  }
+
+  .icons > div:first-child{margin-left: auto;} 
+  .icons > div{margin-right: 50px; }
+
+}
+
+@media screen and (min-width: 1280px) {
+  
+  header .padding {
+    padding: 250px 266px;
+  }
+
+  header h2 {
+    font-size: 80px;
+  }
+  header p {
+    font-size: 25px;
+  }
+
+   .services .service-card {
+  width: 347px;
+  height: 505px;
+  }
+
+  .button-box {
+    
+    margin-top: 56px;
+   
+  }
+  
+  
+}
+
+/* Utilities */
+
+.flex {
+  display: flex
+}
+
+.justify-between {
+  justify-content:space-between;
+}
+
